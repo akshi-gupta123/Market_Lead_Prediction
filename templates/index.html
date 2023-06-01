@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("images4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+           opacity: 0.8;
+           
+        }
+        .split{
+            height : 100%;
+            width: 50%;       
+            position: fixed;  
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            
+
+        }
+        .left{
+            left: 0;
+            width: 50%;
+      
+        }
+        .right{
+            margin-left: 400px;
+            
+        }
+        .right::-webkit-scrollbar {
+  display: none;
+}
+        .heading{
+            color: rgb(228, 229, 230);
+            right: 0;
+            font-size: 70px;
+            padding-top: 35%;
+            margin-left: 10%;
+            margin-right: 30%;  
+                    
+            
+        }
+        .lefthead{
+            text-align: center;
+        }
+        
+        form {
+            padding: 2em 0;
+        }
+
+        .field {
+            display: flex;
+            flex-flow: column-reverse;
+            margin-bottom: 0.5em;
+        }
+        
+        label, input {
+            transition: all 0.2s;
+            touch-action: manipulation;
+        }
+
+        input {
+            font-size: 1rem;
+            border: 1px solid rgb(95, 93, 93);
+            font-family: inherit;
+            -webkit-appearance: none;
+            border-radius: 0.45rem;
+            padding: 5px;
+            cursor: text;
+        }
+
+       input:focus {
+            outline: 0;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        label {
+           text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        input:placeholder-shown + label {
+            cursor: text;
+            padding-left: 5px;
+            max-width: 66.66%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transform-origin: left bottom;
+            transform: translate(0, 2.25rem) scale(0.6);
+            
+        }
+
+        ::-webkit-input-placeholder {
+           opacity: 0;
+           transition: inherit;
+        }
+
+        input:focus::-webkit-input-placeholder {
+            opacity: 1;
+        }
+
+        input:not(:placeholder-shown) + label,
+        input:focus + label {
+            transform: translate(0, 0) scale(1);
+            cursor: pointer;
+        }  
+
+        .formalign{
+            padding-left: 100px;
+            padding-right: 100px;
+            background-color: rgb(177, 196, 204);
+        }
+
+        button{
+            background-color: rgb(41, 48, 57);
+            color: honeydew;
+            align-content: center;
+            margin-top: 20px;
+            width: 150px;
+            border-radius: 5px;
+            
+        }
+
+        
+
+        .top{
+            background-color: rgb(100, 166, 199);
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="split left flip-card-front">
+        <h1 class="heading">
+            Predictive Sales AI
+        </h1>
+    </div>
+    
+    <div class="split right ">
+        <div>
+        <h1 class="lefthead top">
+            Predict Lead Scores
+        </h1>
+        </div>
+
+        <form class ="formalign" action="">
+            <div class="field">
+              <input type="text" name="DoNotEmail" id="DoNotEmail" placeholder="Do Not Email">
+              <label for="DoNotEmail">Do Not Email</label>
+            </div>
+            
+            <div class="field">
+              <input type="text" name="leadOrigin" id="leadOrigin" placeholder="Lead Origin_Lead Add Form">
+              <label for="leadOrigin">Lead Origin_Lead Add Form</label>
+            </div>
+
+            <div class="field">
+                <input type="text" name="leadSource" id="leadSource" placeholder="Lead Source_Welingak Website">
+                <label for="leadSource">Lead Source_Welingak Website</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="lastActivity" id="lastActivity" placeholder="Last Activity_SMS Sent">
+                <label for="lastActivity">Last Activity_SMS Sent</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="Tags_Busy" id="Tags_Busy" placeholder="Tags_Busy">
+                <label for="Tags_Busy">Tags_Busy</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="tagClosed" id="tagClosed" placeholder="Tags_Closed by Horizzon">
+                <label for="tagClosed">Tags_Closed by Horizzon</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="tagLost" id="tagLost" placeholder="Tags_Lost to EINS">
+                <label for="tagLost">Tags_Lost to EINS</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="Tags_Ringing" id="Tags_Ringing" placeholder="Tags_Ringing">
+                <label for="Tags_Ringing">Tags_Ringing</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="tagsRevert" id="tagsRevert" placeholder="Tags_Will revert after reading the email">
+                <label for="tagsRevert">Tags_Will revert after reading the email</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="Tags_invalid_Number" id="Tags_invalid_Number" placeholder="Tags_invalid number">
+                <label for="Tags_invalid_Number">Tags_invalid number</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="Tags_switched_off" id="Tags_switched_off" placeholder="Tags_switched off">
+                <label for="Tags_switched_off">Tags_switched off</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="leadQuality" id="leadQuality" placeholder="Lead Quality_Not Sure">
+                <label for="leadQuality">Lead Quality_Not Sure	</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="Lead_Quality_Worst" id="Lead_Quality_Worst" placeholder="Lead Quality_Worst">
+                <label for="Lead_Quality_Worst">Lead Quality_Worst</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="Last_Activity_Modified" id="Last_Activity_Modified" placeholder="Last Notable Activity_Modified	">
+                <label for="Last_Activity_Modified">Last Notable Activity_Modified	</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="Last_Notable_Activity" id="Last_Notable_Activity" placeholder="Last Notable Activity_Olark Chat Conversation">
+                <label for="Last_Notable_Activity">Last Notable Activity_Olark Chat Conversation</label>
+              </div>
+              <div class="lefthead">
+              <button type="submit">SUBMIT</button>
+              </div>
+
+        </form>
+    </div>
+</body>
+</html>
